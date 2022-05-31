@@ -32,9 +32,8 @@ var
 multiplica:inteiro
 
 inicio
-
-//arthur
-retorne resultado
+multiplica <- n1 * n2
+retorne multiplica
 fimfuncao
 
 //divisao

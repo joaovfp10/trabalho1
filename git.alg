@@ -1,3 +1,6 @@
+algoritmo "Trab1"
+//Nome: João Victor Ferreira Pinto, Rodrigo Malvezi Galliano,
+//      Guilherme Rafael Faraco Vieira, Arthur Sales Lima
 var
 n1, n2:inteiro
 
@@ -8,8 +11,8 @@ soma:inteiro
 
 inicio
 
-//rodrigo
-retorne resultado
+soma <- n1 + n2
+retorne soma
 fimfuncao
 
 //subtracao
@@ -19,8 +22,8 @@ subtrai:inteiro
 
 inicio
 
-//rodrigo
-retorne resultado
+subtrai <- n1 - n2
+retorne subtrai
 fimfuncao
 
 //multiplicacao
@@ -46,8 +49,15 @@ retorne resultado
 fimfuncao
 
 inicio
-escreval("O valor da soma é ",soma)
-escreval("O valor da soma é ",subtracao)
-escreval("O valor da soma é ",multiplicacao)
-escreval("O valor da soma é ",divisao)
+escreval("Informe o primeiro número: ")
+leia(n1)
+escreval("Informe o segundo número: ")
+leia(n2)
+
+
+
+escreval("O valor da soma é ",soma(n1,n2))
+escreval("O valor da soma é ",subtrai(n1,n2))
+escreval("O valor da soma é ",multiplica(n1,n2))
+escreval("O valor da soma é ",divide(n1,n2))
 fimalgoritmo

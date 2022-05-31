@@ -2,12 +2,12 @@ algoritmo "Trab1"
 //Nome: João Victor Ferreira Pinto, Rodrigo Malvezi Galliano,
 //      Guilherme Rafael Faraco Vieira, Arthur Sales Lima
 var
-n1, n2:inteiro
+n1, n2:real
 
 //soma
-funcao soma(n1,n2:inteiro): inteiro
+funcao somar(n1, n2:real): real
 var
-soma:inteiro
+soma:real
 
 inicio
 
@@ -16,9 +16,9 @@ retorne soma
 fimfuncao
 
 //subtracao
-funcao subtrai(n1,n2:inteiro): inteiro
+funcao subtrair(n1, n2:real): real
 var
-subtrai:inteiro
+subtrai:real
 
 inicio
 
@@ -27,9 +27,9 @@ retorne subtrai
 fimfuncao
 
 //multiplicacao
-funcao multiplica(n1,n2:inteiro): inteiro
+funcao multiplicar(n1, n2:real): real
 var
-multiplica:inteiro
+multiplica:real
 
 inicio
 multiplica <- n1 * n2
@@ -37,14 +37,15 @@ retorne multiplica
 fimfuncao
 
 //divisao
-funcao divide(n1,n2:inteiro): inteiro
+funcao dividir(n1, n2:real): real
 var
-divisao:inteiro
+divisao:real
 
 inicio
+divisao <- n1 / n2
 
-//gui
-retorne resultado
+
+retorne divisao
 fimfuncao
 
 inicio
@@ -55,8 +56,8 @@ leia(n2)
 
 
 
-escreval("O valor da soma é ",soma(n1,n2))
-escreval("O valor da soma é ",subtrai(n1,n2))
-escreval("O valor da soma é ",multiplica(n1,n2))
-escreval("O valor da soma é ",divide(n1,n2))
+escreval("O valor da soma é ", somar(n1, n2))
+escreval("O valor da subtração é ", subtrair(n1, n2))
+escreval("O valor da multiplicação é ", multiplicar(n1, n2))
+escreval("O valor da divisão é ", dividir(n1, n2))
 fimalgoritmo
